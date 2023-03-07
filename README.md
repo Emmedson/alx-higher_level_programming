@@ -1,2 +1,1 @@
-# alx-higher_level_programming
-Hello Python
+0x00-python-hello_world, Hello World!
