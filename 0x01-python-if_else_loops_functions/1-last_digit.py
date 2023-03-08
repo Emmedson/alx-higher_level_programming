@@ -3,7 +3,8 @@ import random
 number = random.randint(-10000, 10000)
 print("the digit is {}".format(number))
 if number < 0:
-    last_digit = int((repr(number)[-1]) * -1)
+    last_digit = int(repr(number)[-1])
+    last_digit = last_digit * -1
 elif number == 0:
     last_digit = 0
 else:
