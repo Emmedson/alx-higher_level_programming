@@ -1,5 +1,5 @@
-#include "/usr/include/python3.4/Python.h"
-#include "/usr/include/python3.4/bytesobject.h"
+#include "/usr/include/python3.8/Python.h"
+#include "/usr/include/python3.8/bytesobject.h"
 #include <object.h>
 #include <listobject.h>
 #include <stdio.h>
@@ -61,9 +61,9 @@ void print_python_list(PyObject *p)
 	PyObject *item;
 	Py_ssize_t index;
 
-	list = (PylistListObject *) p;
+	list = (PyListObject *) p;
 
-	printf("[*] Python list info\n")
+	printf("[*] Python list info\n");
 	printf("[*] Size of the Python List = %d\n", (int) Py_SIZE(list));
 	printf("[*] Allocated = %d\n", (int) list->allocated);
 
